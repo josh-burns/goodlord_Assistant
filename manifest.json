@@ -1,0 +1,36 @@
+
+
+{
+  "name": "Goodlord Assistant",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Goodlord Assistant - The one-stop shop for quick information, without going to Sites! ",
+  "icons": { "16": "icon16.png",
+          "48": "icon48.png",
+         "128": "icon128.png" },
+  "browser_action": {
+
+   "default_popup": "popup.html"
+  },
+
+  "permissions": [
+   "activeTab"
+ ],
+"content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+
+ "background": {
+   "scripts": [
+     "background.js",
+     "js.js"
+   ],
+   "persistent": true
+ },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js.js" ],
+      "css":["stylesheet.css"]
+    }
+  ]
+}

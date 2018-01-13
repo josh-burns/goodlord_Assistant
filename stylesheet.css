@@ -1,0 +1,29 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#ss_menu {
+    width: 200px;
+
+    }
+
+.ss_button {
+    background-color: #40c9ae ;
+    border-bottom: 1px solid #FFFFFF ;
+    cursor: pointer;
+    padding: 10px;
+    color: #FFFFFF ;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+
+    }
+
+.ss_content {
+    background-color: #EFEFEF ;
+    display: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+    }
